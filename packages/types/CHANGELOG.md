@@ -1,5 +1,11 @@
 # @redux-saga/types
 
+## 1.3.0
+
+### Minor Changes
+
+- [`80681f8`](https://github.com/thinesjs/redux-saga-next/commit/80681f8bba412e2d255c2af7c5079b9af130546a) Thanks [@thinesjs](https://github.com/thinesjs)! - changes
+
 ## 1.2.1
 
 ### Patch Changes
