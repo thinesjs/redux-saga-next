@@ -20,7 +20,7 @@ const peerDeps = Object.keys(pkg.peerDependencies || {})
 
 let aliases = lernaAlias()
 aliases = {
-  '@redux-saga/core/effects': aliases['@redux-saga/core'].replace(/index\.js$/, 'effects.js'),
+  '@redux-saga-next/core/effects': aliases['@redux-saga-next/core'].replace(/index\.js$/, 'effects.js'),
   '@babel/runtime/helpers/extends': require.resolve('@babel/runtime/helpers/esm/extends'),
   ...aliases,
 }
@@ -133,7 +133,7 @@ export default [
       output: {
         dir: 'dist',
         format,
-        entryFileNames: 'redux-saga-[name]-npm-proxy.[format].js',
+        entryFileNames: 'redux-saga-next-[name]-npm-proxy.[format].js',
       },
     }),
   ),
@@ -157,7 +157,7 @@ export default [
     ...developmentBase,
     input: 'src/effects.js',
     output: {
-      file: 'dist/redux-saga-effects.umd.js',
+      file: 'dist/redux-saga-next-effects.umd.js',
       format: 'umd',
       name: 'ReduxSagaEffects',
     },
@@ -166,7 +166,7 @@ export default [
     ...productionBase,
     input: 'src/effects.js',
     output: {
-      file: 'dist/redux-saga-effects.umd.min.js',
+      file: 'dist/redux-saga-next-effects.umd.min.js',
       format: 'umd',
       name: 'ReduxSagaEffects',
     },
@@ -177,7 +177,7 @@ export default [
     output: {
       dir: 'dist',
       format: 'esm',
-      entryFileNames: 'redux-saga-[name].esmodules-browsers.js',
+      entryFileNames: 'redux-saga-next-[name].esmodules-browsers.js',
     },
     esmodulesBrowsersTarget: true,
   }),
@@ -187,7 +187,7 @@ export default [
     output: {
       dir: 'dist',
       format: 'esm',
-      entryFileNames: 'redux-saga-[name].esmodules-browsers.min.js',
+      entryFileNames: 'redux-saga-next-[name].esmodules-browsers.min.js',
     },
     esmodulesBrowsersTarget: true,
   }),

@@ -19,7 +19,8 @@
     "changeset": "changeset",
     "prerelease": "yarn build",
     "release": "changeset publish",
-    "postinstall": "patch-package"
+    "postinstall": "patch-package",
+    "bundle": "yarn build && cd packages/redux-saga && npm pack && cd ../../"
   },
   "repository": {
     "type": "git",
